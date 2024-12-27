@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/background_light">
+
+    <!-- Home Button -->
+    <ImageButton
+        android:id="@+id/home_button"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/backbutton"
+        android:scaleType="centerInside"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/hamburger_menu_description"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/store_orders_title"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_toEndOf="@id/home_button"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Order Number Spinner -->
+    <TextView
+        android:id="@+id/orderNumberLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/order_number"
+        android:layout_below="@id/titleTextView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp" />
+
+    <Spinner
+        android:id="@+id/orderNumberSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/orderNumberLabel"
+        android:layout_alignBaseline="@id/orderNumberLabel"
+        android:layout_marginStart="8dp" />
+
+    <!-- Order Total -->
+    <TextView
+        android:id="@+id/orderTotalLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/order_total"
+        android:layout_below="@id/orderNumberLabel"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/orderTotalField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/orderTotalLabel"
+        android:layout_alignBaseline="@id/orderTotalLabel"
+        android:layout_marginStart="8dp"
+        android:text="@string/zero"
+        android:textStyle="bold" />
+
+    <!-- Order Items List -->
+    <ListView
+        android:id="@+id/orderItemsListView"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_below="@id/orderTotalField"
+        android:layout_marginTop="16dp"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
+
+    <!-- Buttons -->
+    <Button
+        android:id="@+id/cancelOrderButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel_order"
+        android:layout_below="@id/orderItemsListView"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

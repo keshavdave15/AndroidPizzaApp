@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pizza_types">
+        <item>Meatzza</item>
+        <item>Deluxe</item>
+        <item>BBQ Chicken</item>
+        <item>Build Your Own</item>
+    </string-array>
+</resources>
