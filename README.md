@@ -1,7 +1,9 @@
-Android Pizza App
+Android Pizza App:
+
   A dynamic Android application that simulates an ordering system for RU Pizzeria, allowing users to customize, order, and manage pizzas. 
 
-Features
+Features:
+
   Pizza Styles: Supports Chicago and New York-style pizzas.
   Specialty Pizzas: Deluxe, BBQ Chicken, Meatzza with predefined toppings.
   Build Your Own Pizza: Customize pizzas with up to 7 toppings from a selection of 13 available options.
@@ -14,7 +16,8 @@ Features
   	•	Real-time calculation of subtotals, sales tax (NJ rate of 6.625%), and order totals.
   Export Orders: Save order details to a text file for record-keeping.
 
-Key Technical Highlights
+Key Technical Highlights:
+
   Android Components:
   	•	Utilizes RecyclerView to display pizza options and toppings with images.
   	•	Implements Spinner, AlertDialog, ListView, and Toast for interactive UI elements.
@@ -27,13 +30,15 @@ Key Technical Highlights
   String Resources:
   	•	Eliminated hardcoded text warnings by using strings.xml.
 
-Technology Stack
+Technology Stack:
+
   Java: Core language for business logic and app functionality.
   XML: Layout design for Android screens.
   Gradle: Build and dependency management.
   Android Studio: IDE for development and testing.
 
-Code Structure
+Code Structure:
+
   app/src/main/java/: Contains Java source files, including:
   	•	Pizza class hierarchy (Deluxe, BBQChicken, Meatzza, BuildYourOwn).
   	•	Controllers for managing orders and pizza creation.
